@@ -1,0 +1,38 @@
+{
+  "name": "ppx_bs_css_example",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w",
+    "webpack:production": "NODE_ENV=production webpack"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "esy": {},
+  "dependencies": {
+    "bs-typed-glamor": "github:glennsl/bs-typed-glamor",
+    "ppx_bs_css": "github:astrada/ppx_bs_css#36a3675",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reason-react": ">=0.4.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^3.1.5",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "ocaml": "~4.2.3000",
+    "@esy-ocaml/merlin": "*"
+  },
+  "peerDependencies": {
+    "ocaml": "~4.2.3000"
+  },
+  "resolutions": {
+    "@opam/gen": "0.5.0"
+  }
+}
